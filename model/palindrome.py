@@ -5,8 +5,10 @@ from batteries.spindler_battery import SpindlerBattery
 
 
 class Palindrome(Car):
-    def __init__(self,last_service_date):
-        super().__init__(last_service_date,SpindlerBattery,SternmanEngine)
+    def __init__(self,last_service_date:datetime, warning_light_is_on:bool):
+        super().__init__(SpindlerBattery(last_service_date),
+                         SternmanEngine(last_service_date,warning_light_is_on))
 
-    def needs_service(self,current_date):
+    def needs_service(self):
         return self.battery.needs_service or self.engine.needs_service
+    
