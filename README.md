@@ -1,2 +1,9 @@
-# Starter Repo
-This repo has everything you need to get started on the program, good luck!
+# Lyft Online Work Experience Repository
+This repo contains work done as part of the Lyft online work experience on the Forage.
+
+Work done as part of this experience includes:
+  Software Architecture
+  Code Refactoring
+  Unit Testing
+  Test-Driven Development
+  Git BASH
